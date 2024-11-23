@@ -14,7 +14,7 @@ int main() {
 		std::cin >> v[i];
 	}
 	
-	int sum = 1;
+	long long sum = 1;
 	for (int i = n - 2; i >= 0; i--) {
 		if (v[i] < ans[i + 1] + 1) {
 			ans[i] = v[i];

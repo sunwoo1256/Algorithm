@@ -63,7 +63,7 @@ int main() {
 			//std::cout << visited[i][j];
 			if (visited[i][j] == 0) {
 				inzero = true;
-				maxi = -1;
+				maxi = 0;
 				break;
 			}
 			if (maxi < visited[i][j]) {
@@ -73,13 +73,8 @@ int main() {
 		//std::cout << '\n';
 	}
 
-	if (inzero) {
-		std::cout << -1;
-	}
-	else
-	{
-		std::cout << maxi - 1;
-
-	}
 	
+
+
+	std::cout << maxi - 1;
 }

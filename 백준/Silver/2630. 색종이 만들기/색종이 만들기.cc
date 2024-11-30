@@ -33,6 +33,8 @@ void color(int x, int y, int k) {	//(시작x, 시작y, 크기)
 }
 
 int main() {
+	std::ios::sync_with_stdio(0);
+	std::cin.tie(0);
 	int n;
 	std::cin >> n;
 

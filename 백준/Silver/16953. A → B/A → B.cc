@@ -2,8 +2,8 @@
 #include<vector>
 #include<queue>
 #include<unordered_map>
-long long a;
-long long b;
+int a;
+int b;
 int ans = -1;
 
 std::unordered_map<long long, int> visited;

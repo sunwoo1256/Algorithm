@@ -3,6 +3,8 @@
 #include<algorithm>
 
 int main() {
+	std::ios::sync_with_stdio(false);
+	std::cin.tie(NULL);
 	int n;
 	
 	while (std::cin >> n && n != 0) {

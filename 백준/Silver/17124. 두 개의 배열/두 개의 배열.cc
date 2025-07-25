@@ -10,8 +10,8 @@ int main() {
 	std::cin >> T;
 	for (int i = 0; i < T; i++) {
 		std::cin >> n >> m;
-		std::vector<long long> a(n+1,MAX);
-		std::vector<long long> b(m+1,MAX);
+		std::vector<int> a(n+1,MAX);
+		std::vector<int> b(m+1,MAX);
 		long long cnt = 0;
 		for (int j = 0; j < n; j++) {
 			std::cin >> a[j];

@@ -1,15 +1,16 @@
 #include<iostream>
 
-const int X = 1000000007;
+const int X = 1'000'000'007;
 long long divide(long long b, int r) {
 	if (r == 1) {
 		return b % X;
 	}
+	long long p = divide(b, r / 2);
 	if (r % 2 == 0) {
-		return divide((b%X * b%X) % X, r / 2) % X;
+		return (p%X * p%X) % X;
 	}
 	else {
-		return (divide((b%X * b%X) % X, r / 2) * b) % X;
+		return (b%X * p%X * p%X) % X;
 	}
 }
 
